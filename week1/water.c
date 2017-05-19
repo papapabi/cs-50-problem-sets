@@ -1,5 +1,7 @@
 #include <stdio.h>
-#include "cs50.h"
+#include <stdbool.h>
+
+int get_int();
 
 int main(int argc, char *argv[]) {
   printf("How many minutes do you shower? ");
@@ -7,4 +9,10 @@ int main(int argc, char *argv[]) {
   printf("Minutes: %d\n", minutes);
   printf("Bottles: %d\n", minutes * 12);
   return 0;
+}
+
+int get_int() {
+  int i = 0;
+  scanf("%d", &i);
+  return i;
 }

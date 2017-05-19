@@ -1,5 +1,7 @@
 #include <stdio.h>
-#include "cs50.h"
+#include <stdbool.h>
+
+int get_int();
 
 int main(int argc, char *argv[]) {
   printf("Rows: ");
@@ -25,6 +27,17 @@ int main(int argc, char *argv[]) {
 
     printf("\n");
   }
-
   return 0;
+}
+
+int get_int() {
+  int i = 0;
+  while(true) {
+    scanf("%d", &i);
+    if(i >= 0 && i <= 23) {
+      break;
+    }
+    printf("Retry: ");
+  }
+  return i;
 }

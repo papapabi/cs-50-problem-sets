@@ -11,7 +11,6 @@ int main(int argc, char *argv[]) {
   bool first = true;
   int c = 0; // The counter for our initials
 
-
   printf("Name: ");
   fgets(name, MAX_STRING_LEN, stdin);
 
