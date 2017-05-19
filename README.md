@@ -7,7 +7,7 @@ All course material are freely (as in beer) available at https://cs50.harvard.ed
 
 ## Compilation
 ```sh
-$ gcc <filename>.c cs50.c -o <execname> -std=c99 -lm
+$ gcc <filename>.c -o <execname> -std=c99
 ```
 
 ## File execution
